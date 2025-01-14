@@ -30,54 +30,41 @@
 
 **Classes**
 1) Board
-2) Block
-3) Piece
-4) Game
-5) Move
-6) Player
-7) Game Status ENUM
-
-1) Board
-    initialize() - void
-    reset() - void
-
+   initialize() - void
+   reset() - void
 2) Block
    x, y - int
    label - String
    assignLabel - void
    getPiece() - Piece
    setPiece() - Piece
-
 3) Piece
-    isWhite - boolean
-    killed - boolean
-    canMove(Board, Block, Block) - boolean
-   1) King
-      castlingDone - boolean
-      canMove(Board, Block, Block) - boolean
-   2) Queen
-      canMove(Board, Block, Block) - boolean
-   3) Bishop
-      canMove(Board, Block, Block) - boolean
-   4) Knight
-      canMove(Board, Block, Block) - boolean
-   5) Rook
-      canMove(Board, Block, Block) - boolean
-   6) Pawn
-      canMove(Board, Block, Block) - boolean
-
+   isWhite - boolean
+   killed - boolean
+   canMove(Board, Block, Block) - boolean
+    1) King
+       castlingDone - boolean
+       canMove(Board, Block, Block) - boolean
+    2) Queen
+       canMove(Board, Block, Block) - boolean
+    3) Bishop
+       canMove(Board, Block, Block) - boolean
+    4) Knight
+       canMove(Board, Block, Block) - boolean
+    5) Rook
+       canMove(Board, Block, Block) - boolean
+    6) Pawn
+       canMove(Board, Block, Block) - boolean
 4) Game
    isWhiteTurn - boolean true
    start()
    makeMove()
    displayWinner()
    STATUS - ENUM(ACTIVE, SAVED, WHITEWIN, BLACKWIN, STALEMATE)
-
 5) Move
    startBlock - Block
    endBlock - Block
    isValid()
-
 6) Player
    name - String
    join(Game);
