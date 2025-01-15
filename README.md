@@ -39,7 +39,6 @@
    getPiece() - Piece
    setPiece() - Piece
 3) Piece
-
    isWhite - boolean
    killed - boolean
    canMove(Board, Block, Block) - boolean
